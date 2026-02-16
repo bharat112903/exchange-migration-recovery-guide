@@ -1,4 +1,4 @@
-# Exchange Database Corruption & [Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm) Guide for Administrators
+# Exchange Database Corruption & Exchange Server Recovery Guide for Administrators
 
 Microsoft Exchange Server databases (EDB) rely on the Extensible Storage Engine (ESE) for transactional consistency. Hardware failures, unexpected shutdowns, storage issues, or log corruption can cause databases to enter inconsistent states, preventing them from mounting and disrupting mail services. 
 
@@ -36,7 +36,7 @@ Get-MailboxDatabase -Status | ft Name, Mounted
 
 ## Step 2 — Check Database State Using Eseutil
 
-Determine if the database is in a consistent state or requires **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)**:
+Determine if the database is in a consistent state or requires Exchange Server recovery:
 
 ```cmd
 eseutil /mh "Path\To\Database.edb"
@@ -101,7 +101,7 @@ Restore-Mailbox -Identity user@domain.com -RecoveryDatabase RDB1
 
 ### Scenario C — Database Will Not Mount
 - Use a **Recovery Database (RDB)**.
-- Follow an **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** workflow to extract mailboxes directly from the EDB.
+- Follow an Exchange Server recovery workflow to extract mailboxes directly from the EDB.
 
 ### Scenario D — Exchange Server Unavailable
 - Extract mailboxes to PST using specialized tools.
@@ -109,7 +109,7 @@ Restore-Mailbox -Identity user@domain.com -RecoveryDatabase RDB1
 
 ## Step 8 — Validate Recovered Mailboxes
 
-Ensure data integrity after any **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** operation:
+Ensure data integrity after any Exchange Server recovery operation:
 - Verify folder hierarchy and item counts.
 - Check calendar, contacts, and critical attachments.
 - Confirm user permissions are intact.
@@ -125,10 +125,10 @@ Ensure data integrity after any **[Exchange Server recovery](https://www.stellar
 
 ## Conclusion
 
-Exchange database corruption can disrupt messaging services and create urgent **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** requirements. A structured troubleshooting approach allows administrators to select the safest recovery path. When native tools are insufficient or the Exchange server cannot be restored, extracting mailbox data from the EDB file and restoring it into a new environment provides a practical method to recover services with minimal downtime.
+Exchange database corruption can disrupt messaging services and create urgent Exchange Server recovery requirements. A structured troubleshooting approach allows administrators to select the safest recovery path. When native tools are insufficient or the Exchange server cannot be restored, extracting mailbox data from the EDB file and restoring it into a new environment provides a practical method to recover services with minimal downtime.
 
 ## Tools & Resources
 
-For automated mailbox extraction and advanced **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** from corrupted or offline EDB files, consider specialized tools:
+For automated mailbox extraction and advanced Exchange Server recovery from corrupted or offline EDB files, consider specialized tools:
 
-- **[Stellar Repair for Exchange](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** – Professional-grade **[Exchange Server recovery](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** software designed for database corruption, providing direct EDB extraction, granular mailbox restoration, and recovery from both mounted and offline databases. It is an ideal solution for **EDB recovery without Exchange server** dependencies.
+- **Stellar Repair for Exchange** – Professional-grade software designed for database corruption, providing direct EDB extraction, granular mailbox restoration, and recovery from both mounted and offline databases. It is an ideal solution for EDB recovery without Exchange server dependencies.
