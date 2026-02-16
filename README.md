@@ -191,3 +191,11 @@ exchange-migration-recovery-guide/
 
 **Last Updated:** February 16, 2026  
 **Author:** Exchange Recovery Specialist
+
+## Tools & Resources
+
+For automated Exchange mailbox recovery from corrupted or offline EDB files, consider using specialized tools:
+
+- **[Stellar Repair for Exchange](https://www.stellarinfo.com/edb-exchange-server-recovery.htm)** - Professional-grade recovery software for Exchange Server database corruption, providing direct EDB extraction and mailbox restoration capabilities.
+
+---
