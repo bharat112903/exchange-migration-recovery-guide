@@ -131,4 +131,4 @@ Exchange database corruption can disrupt messaging services and create urgent Ex
 
 For automated mailbox extraction and advanced Exchange Server recovery from corrupted or offline EDB files, consider specialized tools:
 
-- **Stellar Repair for Exchange** – Professional-grade software designed for database corruption, providing direct EDB extraction, granular mailbox restoration, and recovery from both mounted and offline databases. It is an ideal solution for EDB recovery without Exchange server dependencies.
+- **[Stellar Repair for Exchange](https://www.stellarinfo.com/repair-for-exchange.html)** – Professional-grade software designed for database corruption, providing direct EDB extraction, granular mailbox restoration, and recovery from both mounted and offline databases. It is an ideal solution for EDB recovery without Exchange server dependencies.
